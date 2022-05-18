@@ -1,0 +1,113 @@
+body{
+    width: 60%;
+}
+nav{
+    background-color: rgb(31, 46, 46);
+    display: flex;
+    width: 80%;
+}
+
+div.leftnav{
+    width: 60%;
+    display: flex;
+}
+
+div.rightnav{
+    align-self: center;
+    justify-self: flex-end;
+    width: 40%;
+    display: flex;
+}
+
+h4{
+    color: white; 
+    width: 15%;
+    margin-left: 3%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    width: 85%;
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 5%;
+    padding: 0%;
+    margin-left: 5%;
+}
+
+li:first-child > a{
+    color: white;
+    
+}
+
+li:nth-child(2)>a{
+    color: rgb(184, 166, 166);
+}
+
+li > a{
+    color:rgb(87, 87, 87)
+}
+
+ul>li{
+    display: inline;
+
+}
+
+select{
+    background: none;
+    border: none;
+    color: rgb(184, 166, 166);
+}
+
+input[type="text"]{
+ align-self: center;
+ width: 60%;
+ margin-left: 5%;
+ height: 30px;
+ border-radius: 5px;
+ border: none;
+}
+
+
+button{
+ width: 70px;
+ height: 32px;
+ margin-left: 2%;
+ align-self: center;
+ border-radius: 5px;
+ color: green;
+ background-color: inherit;
+ border: green solid 1px;
+}
+
+button:hover{
+    background-color: green;
+    color: white;
+}
+
+.hamburgermenu{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+
+ul{
+    display: none;
+}
+
+input[type="text"], button{
+    display: none;
+}
+
+.hamburgermenu{
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+}
